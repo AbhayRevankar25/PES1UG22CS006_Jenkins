@@ -27,7 +27,9 @@ pipeline {
 
     post {
         failure {
-            echo 'Pipeline failed'
-        }
-    }
+            script {
+                echo 'Pipeline failed'
+            }
+        }
+    }
 }
